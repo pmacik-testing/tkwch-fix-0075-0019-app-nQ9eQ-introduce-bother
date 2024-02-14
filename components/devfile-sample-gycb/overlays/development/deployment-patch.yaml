@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-gycb
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkwch-fix-0075-0019-tenant/tkwch-fix-0075-0019-app/devfile-sample-gycb@sha256:90b78c6d05780e91f91f9be3c6c973c305d8a341524416249b1c44c309bd8473
+        name: my-nodejs
+        resources: {}
+status: {}
